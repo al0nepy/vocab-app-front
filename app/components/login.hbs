@@ -1,0 +1,16 @@
+<div class="flex flex-col items-center justify-center h-screen">
+  <h2 class="text-2xl font-bold mb-4">Login</h2>
+  <form {{on "submit" this.login}}>
+    <div class="mb-4">
+      <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+      <input {{ on 'change' this.onChange }} type="email" id="email" name="email" placeholder="Enter your email" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="mb-4">
+      <label for="password" class="block text-gray-700 font-bold mb-2">Password</label>
+      <input {{ on 'change' this.onChange }} type="password" id="password" name="password" placeholder="Enter your password" class="appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+    </div>
+    <div class="flex justify-center items-center">
+      <button type="submit" class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline w-64">Login</button>
+    </div>
+  </form>
+</div>

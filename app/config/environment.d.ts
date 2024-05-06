@@ -9,6 +9,7 @@ declare const config: {
   locationType: 'history' | 'hash' | 'none';
   rootURL: string;
   APP: Record<string, unknown>;
+  API_URL: string;
 };
 
 export default config;

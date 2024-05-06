@@ -7,5 +7,10 @@ export default class Router extends EmberRouter {
 }
 
 Router.map(function () {
-  // Add route declarations here
+  this.route('login');
+  this.route('sign-up');
+  this.route('vocab');
+  this.route('words', () => {
+    this.route('list', { path: '/:topic_id' });
+  });
 });

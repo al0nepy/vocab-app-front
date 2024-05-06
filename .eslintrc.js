@@ -1,5 +1,7 @@
 'use strict';
 
+const { node } = require('webpack');
+
 module.exports = {
   root: true,
   parser: '@typescript-eslint/parser',
@@ -14,6 +16,7 @@ module.exports = {
   ],
   env: {
     browser: true,
+    node: true,
   },
   rules: {},
   overrides: [
